@@ -1,0 +1,229 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+  }
+
+  body {
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+  }
+
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+
+  header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-bottom: 30px;
+      border-radius: 5px;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  .college-section,
+  .courses-section,
+  .fees-section {
+      background-color: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #eee;
+  }
+
+  .college-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+  }
+
+  .college-card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      transition: all 0.3s ease;
+  }
+
+  .college-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-color: #3498db;
+  }
+
+  .college-card h3 {
+      color: #3498db;
+      margin-bottom: 10px;
+  }
+
+  .college-card p {
+      margin-bottom: 5px;
+      color: #666;
+  }
+
+  .college-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+  }
+
+  .college-link:hover {
+      background-color: #2980b9;
+  }
+
+  .courses-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+  }
+
+  .course-card {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      background-color: #f9f9f9;
+  }
+
+  .course-card h4 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+  }
+
+  .course-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 12px;
+      background-color: #2c3e50;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+  }
+
+  .course-link:hover {
+      background-color: #1a252f;
+  }
+
+  .back-link {
+      display: inline-block;
+      padding: 8px 15px;
+      background-color: #7f8c8d;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 15px;
+  }
+
+  .back-link:hover {
+      background-color: #6c7a7d;
+  }
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+  }
+
+  th,
+  td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+  }
+
+  th {
+      background-color: #3498db;
+      color: white;
+  }
+
+  tr:hover {
+      background-color: #f5f5f5;
+  }
+
+  .highlight {
+      font-weight: bold;
+      color: #e74c3c;
+  }
+
+  /* Hide/show sections using CSS only */
+  #coursesSection,
+  #feesSection {
+      display: none;
+  }
+
+  #college1:target~#coursesSection.college1-courses,
+  #college2:target~#coursesSection.college2-courses,
+  #college3:target~#coursesSection.college3-courses {
+      display: block;
+  }
+
+  #course101:target~#feesSection.course101-fees,
+  #course102:target~#feesSection.course102-fees,
+  #course103:target~#feesSection.course103-fees,
+  #course201:target~#feesSection.course201-fees,
+  #course202:target~#feesSection.course202-fees,
+  #course203:target~#feesSection.course203-fees,
+  #course301:target~#feesSection.course301-fees,
+  #course302:target~#feesSection.course302-fees,
+  #course303:target~#feesSection.course303-fees {
+      display: block;
+  }
+
+  #college1:target~#collegeSection,
+  #college2:target~#collegeSection,
+  #college3:target~#collegeSection,
+  #course101:target~#coursesSection,
+  #course102:target~#coursesSection,
+  #course103:target~#coursesSection,
+  #course201:target~#coursesSection,
+  #course202:target~#coursesSection,
+  #course203:target~#coursesSection,
+  #course301:target~#coursesSection,
+  #course302:target~#coursesSection,
+  #course303:target~#coursesSection {
+      display: none;
+  }
+
+  footer {
+      background: #2c3e50;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+  }
+
+  .footer-links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-bottom: 20px;
+  }
+
+  .footer-links li {
+      margin: 0 15px;
+  }
+
+  .footer-links a {
+      color: white;
+      text-decoration: none;
+  }
