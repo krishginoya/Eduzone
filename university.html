@@ -6,23 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Directory</title>
     <link rel="stylesheet" href="css/university.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="container">
             <h1>University Directory</h1>
-            <p>Find the best universities in Gujarat</p>
+            <p>Find the best universities in Rajkot</p>
         </div>
     </header>
 
     <div class="container">
         <!-- University 1 -->
         <div class="university-card">
-            <div class="image-container">
-                <img src="img/img-1.webp" alt="Marwadi University">
+            <div class="carousel-column">
+                <div class="carousel-container" id="marwadi-carousel">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="img/img-101.jpg" alt="Marwadi University Campus">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-102.jpg" alt="Marwadi University Library">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-103.webp" alt="Marwadi University Classroom">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="prevSlide('marwadi-carousel')">&#10094;</button>
+                    <button class="carousel-btn next" onclick="nextSlide('marwadi-carousel')">&#10095;</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active" onclick="goToSlide('marwadi-carousel', 0)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('marwadi-carousel', 1)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('marwadi-carousel', 2)"></span>
+                    </div>
+                </div>
             </div>
-            <div class="details-container">
+
+            <div class="info-column">
                 <h2 class="university-name">Marwadi University</h2>
                 <div class="university-location">
                     <i>📍</i>
@@ -51,10 +74,30 @@
 
         <!-- University 2 -->
         <div class="university-card">
-            <div class="image-container">
-                <img src="img/img-2.png" alt="Atmiya University">
+            <div class="carousel-column">
+                <div class="carousel-container" id="atmiya-carousel">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="img/img-201.jpg" alt="Atmiya University Campus">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-202.jpeg" alt="Atmiya University Lab">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-203.jpg" alt="Atmiya University Auditorium">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="prevSlide('atmiya-carousel')">&#10094;</button>
+                    <button class="carousel-btn next" onclick="nextSlide('atmiya-carousel')">&#10095;</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active" onclick="goToSlide('atmiya-carousel', 0)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('atmiya-carousel', 1)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('atmiya-carousel', 2)"></span>
+                    </div>
+                </div>
             </div>
-            <div class="details-container">
+
+            <div class="info-column">
                 <h2 class="university-name">Atmiya University</h2>
                 <div class="university-location">
                     <i>📍</i>
@@ -83,10 +126,30 @@
 
         <!-- University 3 -->
         <div class="university-card">
-            <div class="image-container">
-                <img src="img/img-3.png" alt="RK University">
+            <div class="carousel-column">
+                <div class="carousel-container" id="rku-carousel">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="img/img-301.jpeg" alt="RK University Campus">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-302.jpeg" alt="RK University Library">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-303.jpeg" alt="RK University Sports Facility">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="prevSlide('rku-carousel')">&#10094;</button>
+                    <button class="carousel-btn next" onclick="nextSlide('rku-carousel')">&#10095;</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active" onclick="goToSlide('rku-carousel', 0)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('rku-carousel', 1)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('rku-carousel', 2)"></span>
+                    </div>
+                </div>
             </div>
-            <div class="details-container">
+
+            <div class="info-column">
                 <h2 class="university-name">RK University</h2>
                 <div class="university-location">
                     <i>📍</i>
@@ -115,10 +178,30 @@
 
         <!-- University 4 -->
         <div class="university-card">
-            <div class="image-container">
-                <img src="img/img-4.webp" alt="Saurashtra University">
+            <div class="carousel-column">
+                <div class="carousel-container" id="saurashtra-carousel">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="img/img-401.jpg" alt="Saurashtra University Campus">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-402.jpg" alt="Saurashtra University Library">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-403.jpeg" alt="Saurashtra University Seminar Hall">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="prevSlide('saurashtra-carousel')">&#10094;</button>
+                    <button class="carousel-btn next" onclick="nextSlide('saurashtra-carousel')">&#10095;</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active" onclick="goToSlide('saurashtra-carousel', 0)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('saurashtra-carousel', 1)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('saurashtra-carousel', 2)"></span>
+                    </div>
+                </div>
             </div>
-            <div class="details-container">
+
+            <div class="info-column">
                 <h2 class="university-name">Saurashtra University</h2>
                 <div class="university-location">
                     <i>📍</i>
@@ -147,10 +230,30 @@
 
         <!-- University 5 -->
         <div class="university-card">
-            <div class="image-container">
-                <img src="img/img-5.webp" alt="Darshan University">
+            <div class="carousel-column">
+                <div class="carousel-container" id="darshan-carousel">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="img/img-501.jpeg" alt="Darshan University Campus">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-502.jpeg" alt="Darshan University Lab">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-503.jpeg" alt="Darshan University Hostel">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="prevSlide('darshan-carousel')">&#10094;</button>
+                    <button class="carousel-btn next" onclick="nextSlide('darshan-carousel')">&#10095;</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active" onclick="goToSlide('darshan-carousel', 0)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('darshan-carousel', 1)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('darshan-carousel', 2)"></span>
+                    </div>
+                </div>
             </div>
-            <div class="details-container">
+
+            <div class="info-column">
                 <h2 class="university-name">Darshan University</h2>
                 <div class="university-location">
                     <i>📍</i>
@@ -176,7 +279,276 @@
                 </div>
             </div>
         </div>
+
+        <!-- University 6 -->
+        <div class="university-card">
+            <div class="carousel-column">
+                <div class="carousel-container" id="HNShukla-carousel">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="img/img-601.webp" alt="HNShukla University Campus">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-602.jpg" alt="HNShukla University Lab">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-603.webp" alt="HNShukla University Auditorium">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="prevSlide('HNShukla-carousel')">&#10094;</button>
+                    <button class="carousel-btn next" onclick="nextSlide('HNShukla-carousel')">&#10095;</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active" onclick="goToSlide('HNShukla-carousel', 0)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('HNShukla-carousel', 1)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('HNShukla-carousel', 2)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-column">
+                <h2 class="university-name">Shree H N Shukla College</h2>
+                <div class="university-location">
+                    <i>📍</i>
+                    <span>Rajkot, Gujarat</span>
+                </div>
+                <p class="university-description">
+                    Shree H.N. Shukla Group of Colleges. Affiliated to Saurashtra University & GTU, AICTE, NCTE, CCH,
+                    PCI,
+                    INC, GNC. Shree H.N.Shukla Group.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i>📞</i>
+                        <span>+91 9876543211</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>📧</i>
+                        <span>info@hnshukla.edu</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>🌐</i>
+                        <span>https://hnsgroupofcolleges.org/</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- University 7 -->
+        <div class="university-card">
+            <div class="carousel-column">
+                <div class="carousel-container" id="ChristCollege-carousel">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="img/img-701.webp" alt="ChristCollege Campus">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-702.webp" alt="ChristCollege Lab">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-703.webp" alt="ChristCollege Auditorium">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="prevSlide('ChristCollege-carousel ')">&#10094;</button>
+                    <button class="carousel-btn next" onclick="nextSlide('ChristCollege-carousel ')">&#10095;</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active" onclick="goToSlide('ChristCollege-carousel ', 0)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('ChristCollege-carousel ', 1)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('ChristCollege-carousel ', 2)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-column">
+                <h2 class="university-name">Christ College</h2>
+                <div class="university-location">
+                    <i>📍</i>
+                    <span>Rajkot, Gujarat</span>
+                </div>
+                <p class="university-description">
+                    Christ College Rajkot, Offering undergraduate and postgraduate programs in business administration
+                    and
+                    computer applications.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i>📞</i>
+                        <span>+91 9876543211</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>📧</i>
+                        <span>info@Christ.edu</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>🌐</i>
+                        <span>https://christcollegerajkot.edu.in/</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- University 8 -->
+        <div class="university-card">
+            <div class="carousel-column">
+                <div class="carousel-container" id="HAndHBKotakInstituteCarousel">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="img/img-801.jpeg" alt="H & H B Kotak Institute Campus">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-802.webp" alt="H & H B Kotak Institute Lab">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-803.jpeg" alt="H & H B Kotak Institute Auditorium">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev"
+                        onclick="prevSlide('HAndHBKotakInstituteCarousel')">&#10094;</button>
+                    <button class="carousel-btn next"
+                        onclick="nextSlide('HAndHBKotakInstituteCarousel')">&#10095;</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active" onclick="goToSlide('HAndHBKotakInstituteCarousel', 0)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('HAndHBKotakInstituteCarousel', 1)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('HAndHBKotakInstituteCarousel', 2)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-column">
+                <h2 class="university-name">H & H B Kotak Institute of Science</h2>
+                <div class="university-location">
+                    <i>📍</i>
+                    <span>Rajkot, Gujarat</span>
+                </div>
+                <p class="university-description">
+                    H. & H. B. Kotak Institute of Science. Affiliated to Saurashtra University, Rajkot Registered under
+                    2(f)
+                    & 12(B) section of UGC Act. Kotak Science College.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i>📞</i>
+                        <span>+91 9876543211</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>📧</i>
+                        <span>info@atmiya.edu</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>🌐</i>
+                        <span>www.atmiya.edu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- University 9 -->
+        <div class="university-card">
+            <div class="carousel-column">
+                <div class="carousel-container" id="Dharmendrasinhji-carousel">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="img/img-901.webp" alt="Atmiya University Campus">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-902.jpeg" alt="Atmiya University Lab">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-903.jpg" alt="Atmiya University Auditorium">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="prevSlide('Dharmendrasinhji-carousel')">&#10094;</button>
+                    <button class="carousel-btn next" onclick="nextSlide('Dharmendrasinhji-carousel')">&#10095;</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active" onclick="goToSlide('Dharmendrasinhji-carousel', 0)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('Dharmendrasinhji-carousel', 1)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('Dharmendrasinhji-carousel', 2)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-column">
+                <h2 class="university-name">Dharmendrasinhji Arts College</h2>
+                <div class="university-location">
+                    <i>📍</i>
+                    <span>Rajkot, Gujarat</span>
+                </div>
+                <p class="university-description">
+                    At Dharmendrasinhji Arts College, Rajkot, we aim to empower the future citizens of our nation with
+                    the
+                    knowledge of disciplines as well as the knowledge of life.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i>📞</i>
+                        <span>+91 9876543211</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>📧</i>
+                        <span>info@dharmendrasinhji.edu</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>🌐</i>
+                        <span>https://dhcollege.ac.in/</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- University 10 -->
+        <div class="university-card">
+            <div class="carousel-column">
+                <div class="carousel-container" id="Harivandana-carousel">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="img/img-1001.jpg" alt="Harivandana College Campus">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-1002.jpg" alt="Harivandana College Lab">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="img/img-1003.jpg" alt="Harivandana College Auditorium">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="prevSlide('Harivandana-carousel')">&#10094;</button>
+                    <button class="carousel-btn next" onclick="nextSlide('Harivandana-carousel')">&#10095;</button>
+                    <div class="carousel-nav">
+                        <span class="carousel-dot active" onclick="goToSlide('Harivandana-carousel', 0)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('Harivandana-carousel', 1)"></span>
+                        <span class="carousel-dot" onclick="goToSlide('Harivandana-carousel', 2)"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-column">
+                <h2 class="university-name">Harivandana College</h2>
+                <div class="university-location">
+                    <i>📍</i>
+                    <span>Rajkot, Gujarat</span>
+                </div>
+                <p class="university-description">
+                    Harivandana College, Rajkot, is a leading institution dedicated to academic excellence, innovation,
+                    and
+                    holistic student development.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i>📞</i>
+                        <span>+91 9876543211</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>📧</i>
+                        <span>info@harivandana.edu</span>
+                    </div>
+                    <div class="contact-item">
+                        <i>🌐</i>
+                        <span>https://www.harivandanacollege.org/</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
 
     <footer id="contact">
         <div class="container">
@@ -188,6 +560,58 @@
             <p>&copy; 2023 University. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Carousel functionality
+        function prevSlide(carouselId) {
+            const carousel = document.querySelector(`#${carouselId} .carousel`);
+            const slides = document.querySelectorAll(`#${carouselId} .carousel-slide`);
+            const dots = document.querySelectorAll(`#${carouselId} .carousel-dot`);
+
+            const activeDot = document.querySelector(`#${carouselId} .carousel-dot.active`);
+            let currentIndex = Array.from(dots).indexOf(activeDot);
+
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateCarousel(carouselId, currentIndex);
+        }
+
+        function nextSlide(carouselId) {
+            const carousel = document.querySelector(`#${carouselId} .carousel`);
+            const slides = document.querySelectorAll(`#${carouselId} .carousel-slide`);
+            const dots = document.querySelectorAll(`#${carouselId} .carousel-dot`);
+
+            const activeDot = document.querySelector(`#${carouselId} .carousel-dot.active`);
+            let currentIndex = Array.from(dots).indexOf(activeDot);
+
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateCarousel(carouselId, currentIndex);
+        }
+
+        function goToSlide(carouselId, index) {
+            updateCarousel(carouselId, index);
+        }
+
+        function updateCarousel(carouselId, index) {
+            const carousel = document.querySelector(`#${carouselId} .carousel`);
+            const dots = document.querySelectorAll(`#${carouselId} .carousel-dot`);
+
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+        }
+
+        // Auto-rotate carousels
+        document.addEventListener('DOMContentLoaded', function () {
+            const carousels = ['marwadi-carousel', 'atmiya-carousel', 'rku-carousel', 'saurashtra-carousel', 'darshan-carousel', 'HNShukla-carousel', 'ChristCollege-carousel', 'HAndHBKotakInstituteCarousel', 'Dharmendrasinhji-carousel', 'Harivandana-carousel'];
+
+            carousels.forEach(carouselId => {
+                setInterval(() => {
+                    nextSlide(carouselId);
+                }, 5000);
+            });
+        });
+    </script>
 </body>
 
 </html>
