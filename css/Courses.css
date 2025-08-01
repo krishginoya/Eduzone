@@ -212,36 +212,36 @@ tr:hover {
     display: none;
 }
 
-#college1:target~#coursesSection.college1-courses,
-#college2:target~#coursesSection.college2-courses,
-#college3:target~#coursesSection.college3-courses {
+#college1:target ~ .container #coursesSection.college1-courses,
+#college2:target ~ .container #coursesSection.college2-courses,
+#college3:target ~ .container #coursesSection.college3-courses {
     display: block;
 }
 
-#course101:target~#feesSection.course101-fees,
-#course102:target~#feesSection.course102-fees,
-#course103:target~#feesSection.course103-fees,
-#course201:target~#feesSection.course201-fees,
-#course202:target~#feesSection.course202-fees,
-#course203:target~#feesSection.course203-fees,
-#course301:target~#feesSection.course301-fees,
-#course302:target~#feesSection.course302-fees,
-#course303:target~#feesSection.course303-fees {
+#course101:target ~ .container #feesSection.course101-fees,
+#course102:target ~ .container #feesSection.course102-fees,
+#course103:target ~ .container #feesSection.course103-fees,
+#course201:target ~ .container #feesSection.course201-fees,
+#course202:target ~ .container #feesSection.course202-fees,
+#course203:target ~ .container #feesSection.course203-fees,
+#course301:target ~ .container #feesSection.course301-fees,
+#course302:target ~ .container #feesSection.course302-fees,
+#course303:target ~ .container #feesSection.course303-fees {
     display: block;
 }
 
-#college1:target~#collegeSection,
-#college2:target~#collegeSection,
-#college3:target~#collegeSection,
-#course101:target~#coursesSection,
-#course102:target~#coursesSection,
-#course103:target~#coursesSection,
-#course201:target~#coursesSection,
-#course202:target~#coursesSection,
-#course203:target~#coursesSection,
-#course301:target~#coursesSection,
-#course302:target~#coursesSection,
-#course303:target~#coursesSection {
+#college1:target ~ .container #collegeSection,
+#college2:target ~ .container #collegeSection,
+#college3:target ~ .container #collegeSection,
+#course101:target ~ .container #collegeSection,
+#course102:target ~ .container #collegeSection,
+#course103:target ~ .container #collegeSection,
+#course201:target ~ .container #collegeSection,
+#course202:target ~ .container #collegeSection,
+#course203:target ~ .container #collegeSection,
+#course301:target ~ .container #collegeSection,
+#course302:target ~ .container #collegeSection,
+#course303:target ~ .container #collegeSection {
     display: none;
 }
 
