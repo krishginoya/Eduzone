@@ -16,7 +16,7 @@
     font-style: normal;
 }
 
-*/ * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,10 +39,72 @@ body {
     padding: 20px 0;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
 h1,
 h2,
 h3 {
     color: #2c3e50;
+}
+
+
+header {
+    background: #3498db;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 30px;
+}
+
+header .container {
+    padding: 0 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    /* color: #3498db; */
+    text-decoration: underline;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container.hero {
+    padding: 20px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
 }
 
 /* University Cards */
@@ -90,6 +152,9 @@ h3 {
     color: #db344a;
     font-weight: 900;
     margin-top: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
 }
 
 .university-location {
@@ -157,7 +222,7 @@ h3 {
 }
 
 /* Header Styles */
-header {
+/* header {
     background-color: #3498db;
     color: white;
     padding: 20px 0;
@@ -168,7 +233,7 @@ header {
 header h1 {
     color: white;
     margin-bottom: 10px;
-}
+} */
 
 footer {
     background: #3498db;
@@ -230,19 +295,19 @@ footer {
     overflow: hidden;
 }
 
-.container > .university-card:nth-child(even) {
-    border-radius: 100px 0 0 100px;
+.container>.university-card:nth-child(even) {
+    border-radius: 100px +0 0 100px;
 }
 
-.container > .university-card:nth-child(odd) {
+.container>.university-card:nth-child(odd) {
     border-radius: 0 100px 100px 0;
 }
 
-.container > .university-card:nth-child(even) .info-column {
+.container>.university-card:nth-child(even) .info-column {
     padding-left: 70px;
 }
 
-.container > .university-card:nth-child(odd) .info-column {
+.container>.university-card:nth-child(odd) .info-column {
     padding-right: 70px;
 }
 
@@ -318,8 +383,29 @@ footer {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .university-card {
         flex-direction: column;
+    }
+
+    .carousel-column,
+    .info-column {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .container>.university-card:nth-child(odd),
+    .container>.university-card:nth-child(even) {
+        border-radius: 0;
+    }
+
+    .container>.university-card:nth-child(odd) .info-column,
+    .container>.university-card:nth-child(even) .info-column {
+        padding: 10px 20px;
+    }
+
+    .university-name {
+        line-height: 1.2;
+        margin-bottom: 15px;
     }
 }

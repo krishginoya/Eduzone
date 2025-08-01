@@ -54,7 +54,8 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #3498db;
+    /* color: #3498db; */
+    text-decoration: underline;
 }
 
 .hero {
@@ -63,7 +64,7 @@ nav {
     color: white;
     text-align: center;
     padding: 100px 0;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 
 .hero h1 {
