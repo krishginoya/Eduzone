@@ -166,8 +166,10 @@ h2 {
     border-radius: 4px;
     font-size: 0.9rem; */
 
-    margin-top: auto; /* This pushes it to the bottom */
-    align-self: flex-start; /* optional: aligns it to left */
+    margin-top: auto;
+    /* This pushes it to the bottom */
+    align-self: flex-start;
+    /* optional: aligns it to left */
     padding: 6px 12px;
     background-color: #2c3e50;
     color: white;
@@ -228,36 +230,71 @@ tr:hover {
     display: none;
 }
 
-#college1:target ~ .container #coursesSection.college1-courses,
-#college2:target ~ .container #coursesSection.college2-courses,
-#college3:target ~ .container #coursesSection.college3-courses {
+#college1:target~.container #coursesSection.college1-courses,
+#college2:target~.container #coursesSection.college2-courses,
+#college3:target~.container #coursesSection.college3-courses,
+#college4:target~.container #coursesSection.college4-courses,
+#college5:target~.container #coursesSection.college5-courses,
+#college6:target~.container #coursesSection.college6-courses,
+#college7:target~.container #coursesSection.college7-courses,
+#college8:target~.container #coursesSection.college8-courses,
+#college9:target~.container #coursesSection.college9-courses,
+#college10:target~.container #coursesSection.college10-courses {
     display: block;
 }
 
-#course101:target ~ .container #feesSection.course101-fees,
-#course102:target ~ .container #feesSection.course102-fees,
-#course103:target ~ .container #feesSection.course103-fees,
-#course201:target ~ .container #feesSection.course201-fees,
-#course202:target ~ .container #feesSection.course202-fees,
-#course203:target ~ .container #feesSection.course203-fees,
-#course301:target ~ .container #feesSection.course301-fees,
-#course302:target ~ .container #feesSection.course302-fees,
-#course303:target ~ .container #feesSection.course303-fees {
+#course101:target~.container #feesSection.course101-fees,
+#course102:target~.container #feesSection.course102-fees,
+#course103:target~.container #feesSection.course103-fees,
+#course201:target~.container #feesSection.course201-fees,
+#course202:target~.container #feesSection.course202-fees,
+#course203:target~.container #feesSection.course203-fees,
+#course301:target~.container #feesSection.course301-fees,
+#course302:target~.container #feesSection.course302-fees,
+#course303:target~.container #feesSection.course303-fees,
+#course401:target~.container #feesSection.course401-fees,
+#course402:target~.container #feesSection.course402-fees,
+#course403:target~.container #feesSection.course403-fees,
+#course501:target~.container #feesSection.course501-fees,
+#course502:target~.container #feesSection.course502-fees,
+#course503:target~.container #feesSection.course503-fees,
+#course601:target~.container #feesSection.course601-fees,
+#course602:target~.container #feesSection.course602-fees,
+#course603:target~.container #feesSection.course603-fees,
+#course701:target~.container #feesSection.course701-fees,
+#course702:target~.container #feesSection.course702-fees,
+#course703:target~.container #feesSection.course703-fees,
+#course801:target~.container #feesSection.course801-fees,
+#course802:target~.container #feesSection.course802-fees,
+#course803:target~.container #feesSection.course803-fees,
+#course901:target~.container #feesSection.course901-fees,
+#course902:target~.container #feesSection.course902-fees,
+#course903:target~.container #feesSection.course903-fees,
+#course1001:target~.container #feesSection.course1001-fees,
+#course1002:target~.container #feesSection.course1002-fees,
+#course1003:target~.container #feesSection.course1003-fees {
     display: block;
 }
 
-#college1:target ~ .container #collegeSection,
-#college2:target ~ .container #collegeSection,
-#college3:target ~ .container #collegeSection,
-#course101:target ~ .container #collegeSection,
-#course102:target ~ .container #collegeSection,
-#course103:target ~ .container #collegeSection,
-#course201:target ~ .container #collegeSection,
-#course202:target ~ .container #collegeSection,
-#course203:target ~ .container #collegeSection,
-#course301:target ~ .container #collegeSection,
-#course302:target ~ .container #collegeSection,
-#course303:target ~ .container #collegeSection {
+#college1:target~.container #collegeSection,
+#college2:target~.container #collegeSection,
+#college3:target~.container #collegeSection,
+#college4:target~.container #collegeSection,
+#college5:target~.container #collegeSection,
+#college6:target~.container #collegeSection,
+#college7:target~.container #collegeSection,
+#college8:target~.container #collegeSection,
+#college9:target~.container #collegeSection,
+#college10:target~.container #collegeSection,
+#course101:target~.container #collegeSection,
+#course102:target~.container #collegeSection,
+#course103:target~.container #collegeSection,
+#course201:target~.container #collegeSection,
+#course202:target~.container #collegeSection,
+#course203:target~.container #collegeSection,
+#course301:target~.container #collegeSection,
+#course302:target~.container #collegeSection,
+#course303:target~.container #collegeSection {
     display: none;
 }
 
