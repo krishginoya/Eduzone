@@ -294,7 +294,28 @@ tr:hover {
 #course203:target~.container #collegeSection,
 #course301:target~.container #collegeSection,
 #course302:target~.container #collegeSection,
-#course303:target~.container #collegeSection {
+#course303:target~.container #collegeSection,
+#course401:target~.container #collegeSection,
+#course402:target~.container #collegeSection,
+#course403:target~.container #collegeSection,
+#course501:target~.container #collegeSection,
+#course502:target~.container #collegeSection,
+#course503:target~.container #collegeSection,
+#course601:target~.container #collegeSection,
+#course602:target~.container #collegeSection,
+#course603:target~.container #collegeSection,
+#course701:target~.container #collegeSection,
+#course702:target~.container #collegeSection,
+#course703:target~.container #collegeSection,
+#course801:target~.container #collegeSection,
+#course802:target~.container #collegeSection,
+#course803:target~.container #collegeSection,
+#course901:target~.container #collegeSection,
+#course902:target~.container #collegeSection,
+#course903:target~.container #collegeSection,
+#course1001:target~.container #collegeSection,
+#course1002:target~.container #collegeSection,
+#course1003:target~.container #collegeSection {
     display: none;
 }
 
