@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    /* padding: 20px 0; */
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    /* color: #3498db; */
+    text-decoration: underline;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.college-section,
+.courses-section,
+.fees-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-bottom-50 {
+    margin-bottom: 50px;
+}
+
+.college-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.college-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.college-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-color: #3498db;
+}
+
+.college-card h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.college-card p {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.college-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.college-link:hover {
+    background-color: #2980b9;
+}
+
+.courses-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-card h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.course-link {
+    /* display: inline-block;
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem; */
+
+    margin-top: auto;
+    /* This pushes it to the bottom */
+    align-self: flex-start;
+    /* optional: aligns it to left */
+    padding: 6px 12px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+.course-link:hover {
+    background-color: #1a252f;
+}
+
+.back-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #7f8c8d;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.back-link:hover {
+    background-color: #6c7a7d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Hide/show sections using CSS only */
+#coursesSection,
+#feesSection {
+    display: none;
+}
+
+#college1:target~.container #coursesSection.college1-courses,
+#college2:target~.container #coursesSection.college2-courses,
+#college3:target~.container #coursesSection.college3-courses,
+#college4:target~.container #coursesSection.college4-courses,
+#college5:target~.container #coursesSection.college5-courses,
+#college6:target~.container #coursesSection.college6-courses,
+#college7:target~.container #coursesSection.college7-courses,
+#college8:target~.container #coursesSection.college8-courses,
+#college9:target~.container #coursesSection.college9-courses,
+#college10:target~.container #coursesSection.college10-courses {
+    display: block;
+}
+
+#course101:target~.container #feesSection.course101-fees,
+#course102:target~.container #feesSection.course102-fees,
+#course103:target~.container #feesSection.course103-fees,
+#course201:target~.container #feesSection.course201-fees,
+#course202:target~.container #feesSection.course202-fees,
+#course203:target~.container #feesSection.course203-fees,
+#course301:target~.container #feesSection.course301-fees,
+#course302:target~.container #feesSection.course302-fees,
+#course303:target~.container #feesSection.course303-fees,
+#course401:target~.container #feesSection.course401-fees,
+#course402:target~.container #feesSection.course402-fees,
+#course403:target~.container #feesSection.course403-fees,
+#course501:target~.container #feesSection.course501-fees,
+#course502:target~.container #feesSection.course502-fees,
+#course503:target~.container #feesSection.course503-fees,
+#course601:target~.container #feesSection.course601-fees,
+#course602:target~.container #feesSection.course602-fees,
+#course603:target~.container #feesSection.course603-fees,
+#course701:target~.container #feesSection.course701-fees,
+#course702:target~.container #feesSection.course702-fees,
+#course703:target~.container #feesSection.course703-fees,
+#course801:target~.container #feesSection.course801-fees,
+#course802:target~.container #feesSection.course802-fees,
+#course803:target~.container #feesSection.course803-fees,
+#course901:target~.container #feesSection.course901-fees,
+#course902:target~.container #feesSection.course902-fees,
+#course903:target~.container #feesSection.course903-fees,
+#course1001:target~.container #feesSection.course1001-fees,
+#course1002:target~.container #feesSection.course1002-fees,
+#course1003:target~.container #feesSection.course1003-fees {
+    display: block;
+}
+
+#college1:target~.container #collegeSection,
+#college2:target~.container #collegeSection,
+#college3:target~.container #collegeSection,
+#college4:target~.container #collegeSection,
+#college5:target~.container #collegeSection,
+#college6:target~.container #collegeSection,
+#college7:target~.container #collegeSection,
+#college8:target~.container #collegeSection,
+#college9:target~.container #collegeSection,
+#college10:target~.container #collegeSection,
+#course101:target~.container #collegeSection,
+#course102:target~.container #collegeSection,
+#course103:target~.container #collegeSection,
+#course201:target~.container #collegeSection,
+#course202:target~.container #collegeSection,
+#course203:target~.container #collegeSection,
+#course301:target~.container #collegeSection,
+#course302:target~.container #collegeSection,
+#course303:target~.container #collegeSection,
+#course401:target~.container #collegeSection,
+#course402:target~.container #collegeSection,
+#course403:target~.container #collegeSection,
+#course501:target~.container #collegeSection,
+#course502:target~.container #collegeSection,
+#course503:target~.container #collegeSection,
+#course601:target~.container #collegeSection,
+#course602:target~.container #collegeSection,
+#course603:target~.container #collegeSection,
+#course701:target~.container #collegeSection,
+#course702:target~.container #collegeSection,
+#course703:target~.container #collegeSection,
+#course801:target~.container #collegeSection,
+#course802:target~.container #collegeSection,
+#course803:target~.container #collegeSection,
+#course901:target~.container #collegeSection,
+#course902:target~.container #collegeSection,
+#course903:target~.container #collegeSection,
+#course1001:target~.container #collegeSection,
+#course1002:target~.container #collegeSection,
+#course1003:target~.container #collegeSection {
+    display: none;
+}
+
+footer {
+    background: #3498db;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
